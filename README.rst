@@ -44,7 +44,10 @@ Sample Usage
 
 Sample Screenshot
 -----------------
-.. raw:: html
+COVID-19 VOC (Variants of Concern) Designation Timeline
 
-   <a href="https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/pyvis_timeline/examples/covid19_VOC_timeline.html">SARS-CoV-2 VOC (Variants of Concern) Designation Timeline</a>
+|image1|
+
+
+.. |image1| image:: https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/pyvis_timeline/examples/covid19_VOC_designation_timeline.png
 
