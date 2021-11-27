@@ -19,6 +19,7 @@ class timeline(object):
 
     def add_df(self, df: pd.DataFrame) -> None:
       self.df = df.copy()
+      return self
 
     def _generate_html(self) -> None:
       """

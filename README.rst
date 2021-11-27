@@ -38,11 +38,8 @@ Sample Usage
 
 >>> import pandas as pd
 >>> from pyvis_timeline import timeline
->>> data = {'content': ['item1', 'item2', 'item3', 'item4'], 'start': ['2021-03-20', '2021-04-30', '2021-05-15', '2021-06-27'], 'end': [None, None, None, '2021-07-31']}
->>> df = pd.DataFrame.from_dict(data)
->>> vis1 = timeline(title='Basic Timeline')
->>> vis1.add_df(df = df)
->>> vis1.show('timeline.html') # this will generate a html and open a webbrowser tab to view it
+>>> df = pd.DataFrame.from_dict({'content': ['Alpha (B.1.1.7)', 'Beta (B.1.351)', 'Gamma (P.1)', 'Delta (B.1.617.2)', 'Omicron (B.1.1.529)'], 'start': ['2020-12-18', '2020-12-18', '2021-01-11', '2021-05-11', '2021-11-26'], 'end': [None, None, None, None, None]}) # https://www.who.int/en/activities/tracking-SARS-CoV-2-variants/
+>>> timeline(title='SARS-CoV-2 Variants of Concern (VOC) Designation').add_df(df).show('timeline.html')
 
 
 Sample Screenshot
@@ -52,5 +49,5 @@ Basic Timeline
 |image1|
 
 
-.. |image1| image:: https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/pyvis_timeline/examples/basic_timeline.png
+.. |image1| image:: https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/pyvis_timeline/examples/covid19_VOC_designation_timeline.png
 
