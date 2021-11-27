@@ -1,4 +1,6 @@
 2021-11-27
 ----------
-ver 0.0.2: Basic functionality. Visualizing a dataframe.
+ver 0.0.3: Basic functionality. Visualizing the timeline of a pandas dataframe with 3 columns = ['content','start','end']
 
+timeline.add_df(df)
+timeline.show(filename)
