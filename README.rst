@@ -44,7 +44,7 @@ Sample Usage
 
 Sample Screenshot
 -----------------
-Basic Timeline
+COVID-19 VOC (Variants of Concern) Designation Timeline
 
 |image1|
 
