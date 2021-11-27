@@ -4,7 +4,7 @@
 #
 # License: BSD-3-Clause
 
-from ._time import timeline
+from ._timeline import timeline
 
 # this is for "from <package_name>.game import *"
 __all__ = ["timeline",]

@@ -33,3 +33,13 @@ Installation
 Sample Usage
 ------------
 
+import pandas as pd
+from pyvis_timeline import timeline
+
+data = {'content': ['item1', 'item2', 'item3',], 'start': ['2020-03-20', '2020-04-30', '2020-05-15',], 'end': [None, None, None,]}
+df = pd.DataFrame.from_dict(data)
+print(df)
+vis1 = timeline(title='Basic Timeline')
+vis1.add_df(df = df)
+vis1.write_html('test.html')
+
