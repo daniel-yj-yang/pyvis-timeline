@@ -41,5 +41,15 @@ df = pd.DataFrame.from_dict(data)
 print(df)
 vis1 = timeline(title='Basic Timeline')
 vis1.add_df(df = df)
-vis1.show('test.html')
+vis1.show('timeline.html')
+
+
+Sample Screenshot
+-----------------
+Basic Timeline
+
+|image1|
+
+
+.. |image1| image:: https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/treekit/examples/basic_timeline.png
 
