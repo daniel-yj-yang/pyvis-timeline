@@ -22,6 +22,9 @@
 Interactive Timeline Visualizations
 ===================================
 
+This tool leverages the amazing visualization javascript library (https://visjs.org/) and visualize the timeline of a dataset.
+
+
 Installation
 ------------
 
