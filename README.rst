@@ -22,7 +22,7 @@
 Interactive Timeline Visualizations
 ===================================
 
-This tool leverages the amazing vis-timeline library (https://github.com/visjs/vis-timeline) to provide visualization.
+This tool leverages the amazing vis-timeline library to provide interactive visualizations.
 
 
 Installation
@@ -52,5 +52,5 @@ Basic Timeline
 |image1|
 
 
-.. |image1| image:: https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/treekit/examples/basic_timeline.png
+.. |image1| image:: https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/pyvis_timeline/examples/basic_timeline.png
 
