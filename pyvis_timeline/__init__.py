@@ -10,5 +10,7 @@ from .__about__ import (
     __license__,
 )
 
+from .timeline import timeline
+
 # this is for "from <package_name> import *"
 __all__ = [""]
