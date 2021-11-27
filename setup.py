@@ -6,7 +6,7 @@
 
 import setuptools
 
-import pyvis-timeline
+import pyvis_timeline
 
 with open("README.rst", "r") as fh:
     long_description = fh.read()
@@ -16,11 +16,11 @@ with open("requirements.txt") as fh:
 
 setuptools.setup(
     name="pyvis-timeline",
-    version=pyvis-timeline.__version__,
+    version=pyvis_timeline.__version__,
     author="Daniel Yang",
     author_email="daniel.yj.yang@gmail.com",
     description="Interactive Timeline Visualizations",
-    license=pyvis-timeline.__license__,
+    license=pyvis_timeline.__license__,
     long_description=long_description,
     long_description_content_type="text/x-rst",
     url="https://github.com/daniel-yj-yang/pyvis-timeline",
