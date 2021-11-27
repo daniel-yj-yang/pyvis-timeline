@@ -58,17 +58,15 @@ class timeline(object):
 
     def write_html(self, filename: Union[Path, str]) -> None:
       self._generate_html()
-      if not isinstance(filename, Path):
-        output_path = Path(filename)
-      else:
-        output_path = filename
+      output_path = filename
+      if not isinstance(output_path, Path):
+        output_path = Path(output_path)
       output_path.write_text(self.html)
 
     def show(self, filename: Union[Path, str]) -> None:
-      if not isinstance(filename, Path):
-        output_path = Path(filename)
-      else:
-        output_path = filename
+      output_path = filename
+      if not isinstance(output_path, Path):
+        output_path = Path(output_path)
       self.write_html(filename=output_path)
       webbrowser.open(output_path.resolve().as_uri(), new = 2)
 
