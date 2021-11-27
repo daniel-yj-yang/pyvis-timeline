@@ -36,15 +36,13 @@ Installation
 Sample Usage
 ------------
 
-.. code-block::
-
-import pandas as pd
-from pyvis_timeline import timeline
-data = {'content': ['item1', 'item2', 'item3', 'item4'], 'start': ['2021-03-20', '2021-04-30', '2021-05-15', '2021-06-27'], 'end': [None, None, None, '2021-07-31']}
-df = pd.DataFrame.from_dict(data)
-vis1 = timeline(title='Basic Timeline')
-vis1.add_df(df = df)
-vis1.show('timeline.html') # this will generate a html and open a webbrowser tab to view it
+>>> import pandas as pd
+>>> from pyvis_timeline import timeline
+>>> data = {'content': ['item1', 'item2', 'item3', 'item4'], 'start': ['2021-03-20', '2021-04-30', '2021-05-15', '2021-06-27'], 'end': [None, None, None, '2021-07-31']}
+>>> df = pd.DataFrame.from_dict(data)
+>>> vis1 = timeline(title='Basic Timeline')
+>>> vis1.add_df(df = df)
+>>> vis1.show('timeline.html') # this will generate a html and open a webbrowser tab to view it
 
 
 Sample Screenshot
