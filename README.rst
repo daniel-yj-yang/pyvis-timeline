@@ -46,5 +46,5 @@ Sample Screenshot
 -----------------
 .. raw:: html
 
-   <a href="SARS-CoV-2 VOC (Variants of Concern) Designation Timeline">https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/pyvis_timeline/examples/covid19_VOC_timeline.html</a>
+   <a href="https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/pyvis_timeline/examples/covid19_VOC_timeline.html">SARS-CoV-2 VOC (Variants of Concern) Designation Timeline</a>
 
