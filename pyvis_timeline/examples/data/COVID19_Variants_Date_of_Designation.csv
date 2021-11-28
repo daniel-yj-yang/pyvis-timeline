@@ -1,4 +1,4 @@
-content,start,end,group
+﻿content,start,end,group
 Alpha (B.1.1.7),2020-12-18,,Variants of Concern (VOC)
 Beta (B.1.351),2020-12-18,,Variants of Concern (VOC)
 Gamma (P.1),2021-01-11,,Variants of Concern (VOC)
@@ -13,3 +13,16 @@ Iota (B.1.526),2021-09-20,,Variants Under Monitoring (VUM)
 Eta (B.1.525),2021-09-20,,Variants Under Monitoring (VUM)
 (B.1.630),2021-10-12,,Variants Under Monitoring (VUM)
 (B.1.640),2021-11-22,,Variants Under Monitoring (VUM)
+AV.1 ,2021-07-21,,Formerly monitored variants
+AT.1 ,2021-07-21,,Formerly monitored variants
+Zeta (P.2),2021-08-17,,Formerly monitored variants
+Theta (P.3),2021-08-17,,Formerly monitored variants
+R.1,2021-11-09,,Formerly monitored variants
+B.1.466.2 ,2021-11-09,,Formerly monitored variants
+B.1.1.519,2021-11-09,,Formerly monitored variants
+C.36.3,2021-11-09,,Formerly monitored variants
+B.1.214.2,2021-11-09,,Formerly monitored variants
+Epsilon (B.1.427/B.1.429),2021-11-09,,Formerly monitored variants
+B.1.1.523,2021-11-09,,Formerly monitored variants
+B.1.619,2021-11-09,,Formerly monitored variants
+B.1.620,2021-11-09,,Formerly monitored variants
