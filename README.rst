@@ -36,18 +36,17 @@ Installation
 Sample Usage
 ------------
 
->>> import pandas as pd
->>> from pyvis_timeline import timeline
->>> df = pd.DataFrame.from_dict({'content': ['Alpha (B.1.1.7)', 'Beta (B.1.351)', 'Gamma (P.1)', 'Delta (B.1.617.2)', 'Omicron (B.1.1.529)'], 'start': ['2020-12-18', '2020-12-18', '2021-01-11', '2021-05-11', '2021-11-26'], 'end': [None, None, None, None, None]}) # https://www.who.int/en/activities/tracking-SARS-CoV-2-variants/
->>> timeline(title='SARS-CoV-2 VOC (Variants of Concern) Designation Timeline').add_df(df).show('covid19_VOC_timeline.html')
+>>> from pyvis_timeline import timeline, dataset
+>>> df = dataset().load_as_df("COVID19_Variants_Date_of_Designation")
+>>> timeline(title='COVID-19 Variants - Date of Designation').add_df(df).show('output.html')
 
 
 Sample Screenshot
 -----------------
-COVID-19 VOC (Variants of Concern) Designation Timeline
+COVID-19 Variants Designation Timeline
 
 |image1|
 
 
-.. |image1| image:: https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/pyvis_timeline/examples/covid19_VOC_designation_timeline.png
+.. |image1| image:: https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/pyvis_timeline/examples/covid19_variants_designation_timeline.png
 

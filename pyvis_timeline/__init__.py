@@ -11,6 +11,7 @@ from .__about__ import (
 )
 
 from .timeline import timeline
+from .examples import dataset
 
 # this is for "from <package_name> import *"
-__all__ = [""]
+__all__ = ["timeline", "dataset"]

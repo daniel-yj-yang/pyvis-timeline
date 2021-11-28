@@ -9,6 +9,7 @@ from typing import Union
 from pathlib import Path
 import pandas as pd
 import webbrowser
+import sys
 
 
 class timeline(object):
@@ -40,19 +41,51 @@ class timeline(object):
 <body>
 <div id="visualization"></div>
 <script type="text/javascript">
-  var container = document.getElementById('visualization');
-  var items = new vis.DataSet(["""
+  var container = document.getElementById('visualization');"""
 
-      for idx, row in self.df.iterrows():
-        start_part = f", start: '{row['start']}'" if row['start'] else ""
-        end_part = f", end: '{row['end']}'" if row['end'] else ""
+      use_group = False
+      if (self.df['group'] != '').all():
+        use_group = True
+
+      if use_group:
         self.html += f"""
-    {{id: {idx+1}, content: '{row['content']}'{start_part}{end_part}}},"""
+  var groups = new vis.DataSet(["""
+        group_array = self.df['group'].unique().tolist()
+        group_hashmap = {}
+        for i in range(len(group_array)):
+          group_hashmap[group_array[i]] = i
+          self.html += f"""
+    {{ id: {i}, content: "{group_array[i]}" }},"""
+        self.html += f"""
+  ]);"""
+
+      self.html += f"""
+  var items = new vis.DataSet(["""
+      for idx, row in self.df.iterrows():
+        if row['content'] == '' or row['start'] == '':
+          print("Error. The 'content' or 'start' columns cannot be empty.")
+          sys.exit(1)
+        item_id = f"id: {idx}"
+        if use_group:
+          item_group = f", group: {group_hashmap[row['group']]}"
+        else:
+          item_group = ""
+        item_content = f", content: '{row['content']}'"
+        item_start = f", start: '{row['start']}'"
+        item_end = "" if row['end'] == '' else f", end: '{row['end']}'"
+        self.html += f"""
+    {{{item_id}{item_group}{item_content}{item_start}{item_end}}},"""
 
       self.html += f"""
   ]);
-  var options = {{}};
-  var timeline = new vis.Timeline(container, items, options);
+  var options = {{}};"""
+
+      self.html += f"""
+  var timeline = new vis.Timeline(container, items, options);"""
+      if use_group:
+        self.html += f"""
+  timeline.setGroups(groups);"""
+      self.html += f"""
 </script>
 </body>
 </html>"""
