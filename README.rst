@@ -43,7 +43,7 @@ Sample Usage
 
 Sample Screenshot
 -----------------
-COVID-19 Variants Designation Timeline as of 2021-11-27:
+COVID-19 Variants Designation Timeline as of 2021-11-27
 
 |image1|
 
