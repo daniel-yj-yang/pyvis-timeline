@@ -48,5 +48,5 @@ COVID-19 Variants Designation Timeline
 |image1|
 
 
-.. |image1| image:: https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/pyvis_timeline/examples/covid19_variants_designation_timeline.png
+.. |image1| image:: https://github.com/daniel-yj-yang/pyvis-timeline/raw/main/pyvis_timeline/examples/images/covid19_variants_designation_timeline.png
 
