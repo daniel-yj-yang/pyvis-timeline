@@ -1,6 +1,6 @@
 2021-11-27
 ----------
-ver 0.0.6: Basic functionality. Visualizing the timeline of a pandas dataframe with 4 columns = ['content','start','end','group']
+ver 0.0.7: Basic functionality. Visualizing the timeline of a pandas dataframe with 4 columns = ['content','start','end','group']
 
 dataset.load_as_df(name)
 timeline.add_df(df)
