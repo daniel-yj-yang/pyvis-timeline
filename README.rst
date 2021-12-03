@@ -22,7 +22,7 @@
 Interactive Timeline Visualizations
 ===================================
 
-This tool leverages the amazing vis-timeline library to provide interactive visualizations.
+This tool leverages the amazing vis-timeline library (https://visjs.github.io/vis-timeline/docs/timeline/) to provide interactive visualizations.
 
 
 Installation
