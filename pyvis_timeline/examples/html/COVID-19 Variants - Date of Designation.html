@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>COVID-19 Variants - Date of Designation</title>
+  <style type="text/css">
+    body, html {
+      font-family: sans-serif;
+    }
+  </style>
+  <script type="text/javascript" src="https://unpkg.com/moment@2.29.1"></script>
+  <script type="text/javascript" src="https://unpkg.com/vis-data@7.1.2/peer/umd/vis-data.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/vis-timeline@7.5.0/peer/umd/vis-timeline-graph2d.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/vis-timeline/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <!-- Include other packages like Vis Network or Vis Graph3D here. -->
+  <!-- Optionally include locales for Moment if needing any. -->  
+  <!-- alternative ways:
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  -->
+</head>
+<body>
+<div id="visualization"></div>
+<script type="text/javascript">
+  var container = document.getElementById('visualization');
+  var groups = new vis.DataSet([
+    { id: 0, content: "Variants of Concern (VOC)" },
+    { id: 1, content: "Variants of Interest (VOI)" },
+    { id: 2, content: "Variants Under Monitoring (VUM)" },
+    { id: 3, content: "Formerly monitored variants" },
+  ]);
+  var items = new vis.DataSet([
+    {id: 0, group: 0, content: 'Alpha (B.1.1.7)', start: '2020-12-18'},
+    {id: 1, group: 0, content: 'Beta (B.1.351)', start: '2020-12-18'},
+    {id: 2, group: 0, content: 'Gamma (P.1)', start: '2021-01-11'},
+    {id: 3, group: 0, content: 'Delta (B.1.617.2)', start: '2021-05-11'},
+    {id: 4, group: 0, content: 'Omicron (B.1.1.529)', start: '2021-11-26'},
+    {id: 5, group: 1, content: 'Lambda (C.37)', start: '2021-06-14'},
+    {id: 6, group: 1, content: 'Mu (B.1.621)', start: '2021-08-30'},
+    {id: 7, group: 2, content: '(AZ.5)', start: '2021-06-02'},
+    {id: 8, group: 2, content: '(C.1.2)', start: '2021-09-01'},
+    {id: 9, group: 2, content: 'Kappa (B.1.617.1)', start: '2021-09-20'},
+    {id: 10, group: 2, content: 'Iota (B.1.526)', start: '2021-09-20'},
+    {id: 11, group: 2, content: 'Eta (B.1.525)', start: '2021-09-20'},
+    {id: 12, group: 2, content: '(B.1.630)', start: '2021-10-12'},
+    {id: 13, group: 2, content: '(B.1.640)', start: '2021-11-22'},
+    {id: 14, group: 3, content: 'AV.1 ', start: '2021-07-21'},
+    {id: 15, group: 3, content: 'AT.1 ', start: '2021-07-21'},
+    {id: 16, group: 3, content: 'Zeta (P.2)', start: '2021-08-17'},
+    {id: 17, group: 3, content: 'Theta (P.3)', start: '2021-08-17'},
+    {id: 18, group: 3, content: 'R.1', start: '2021-11-09'},
+    {id: 19, group: 3, content: 'B.1.466.2 ', start: '2021-11-09'},
+    {id: 20, group: 3, content: 'B.1.1.519', start: '2021-11-09'},
+    {id: 21, group: 3, content: 'C.36.3', start: '2021-11-09'},
+    {id: 22, group: 3, content: 'B.1.214.2', start: '2021-11-09'},
+    {id: 23, group: 3, content: 'Epsilon (B.1.427/B.1.429)', start: '2021-11-09'},
+    {id: 24, group: 3, content: 'B.1.1.523', start: '2021-11-09'},
+    {id: 25, group: 3, content: 'B.1.619', start: '2021-11-09'},
+    {id: 26, group: 3, content: 'B.1.620', start: '2021-11-09'},
+  ]);
+  var options = {};
+  var timeline = new vis.Timeline(container, items, options);
+  timeline.setGroups(groups);
+</script>
+</body>
+</html>
