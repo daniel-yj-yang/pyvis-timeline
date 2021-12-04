@@ -5,6 +5,6 @@
 # License: BSD-3-Clause
 
  
-__version__ = "0.0.7"
+__version__ = "0.0.8"
 
 __license__ = "BSD-3-Clause License"

@@ -35,8 +35,16 @@ class timeline(object):
       font-family: sans-serif;
     }}
   </style>
+  <script type="text/javascript" src="https://unpkg.com/moment@2.29.1"></script>
+  <script type="text/javascript" src="https://unpkg.com/vis-data@7.1.2/peer/umd/vis-data.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/vis-timeline@7.5.0/peer/umd/vis-timeline-graph2d.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/vis-timeline/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <!-- Include other packages like Vis Network or Vis Graph3D here. -->
+  <!-- Optionally include locales for Moment if needing any. -->  
+  <!-- alternative ways:
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  -->
 </head>
 <body>
 <div id="visualization"></div>
